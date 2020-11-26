@@ -47,7 +47,7 @@ public class student_resultMockitoTest {
         //verify(mockRP,times(1)).sort_output(A);
 
         //测试failed_num()单元并断言
-        assertEquals(mockRP.failed_num(A),2);
+        assertEquals(mockRP.failed_num(A),3);
 
     }
 }

@@ -1,5 +1,6 @@
 package com.caipeiyan.demo;
 
+import org.apache.commons.lang3.ArrayUtils;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -19,6 +20,13 @@ public class result_processTest {
     @After
     public void tearDown() throws Exception {
     }
+
+    @Test
+    public void GetLength() {               //测试Apache类库lang的函数
+        //调用被测试单元并断言
+        assertEquals(ArrayUtils.getLength(A),7);
+    }
+
 
     @Test
     public void great_num() {
